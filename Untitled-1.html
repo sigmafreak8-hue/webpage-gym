@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON PULSE | Premium Fitness Gym</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); background-size: cover; background-position: center; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-gray-100">
+
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-extrabold tracking-tighter text-red-600">IRON<span class="text-white">PULSE</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                    <a href="#home" class="hover:text-red-600 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-red-600 transition-colors">About</a>
+                    <a href="#services" class="hover:text-red-600 transition-colors">Services</a>
+                    <a href="#trainers" class="hover:text-red-600 transition-colors">Trainers</a>
+                    <a href="#pricing" class="hover:text-red-600 transition-colors">Pricing</a>
+                    <a href="#contact" class="hover:text-red-600 transition-colors">Contact</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105">JOIN NOW</button>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 px-4 pt-2 pb-6 space-y-2 border-b border-white/10">
+            <a href="#home" class="block py-2 text-lg">Home</a>
+            <a href="#about" class="block py-2 text-lg">About</a>
+            <a href="#services" class="block py-2 text-lg">Services</a>
+            <a href="#pricing" class="block py-2 text-lg">Pricing</a>
+            <a href="#contact" class="block py-2 text-lg">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-gradient h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-6 leading-tight">TRANSFORM YOUR <span class="text-red-600">BODY</span> TODAY</h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Elite trainers, state-of-the-art equipment, and a community that pushes you further. Your journey to greatness starts here.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#pricing" class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-md font-bold text-lg transition-all">GET STARTED</a>
+                <a href="#services" class="border-2 border-white hover:bg-white hover:text-black text-white px-10 py-4 rounded-md font-bold text-lg transition-all">OUR SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gym" class="rounded-lg shadow-2xl relative z-10">
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border-4 border-red-600 -z-0 rounded-lg hidden md:block"></div>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold mb-6 italic">WE PUSH YOU <span class="text-red-600">BEYOND</span> YOUR LIMITS</h2>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Founded in 2010, Iron Pulse has been the sanctuary for those looking to redefine their physical and mental strength. We believe that fitness is not just a hobby, but a lifestyle of discipline and growth.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="text-red-600 mr-3"></i> Modern 24/7 Facility</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="text-red-600 mr-3"></i> Certified Nutrition Specialists</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="text-red-600 mr-3"></i> Monthly Progress Tracking</li>
+                    </ul>
+                    <button class="text-red-600 font-bold flex items-center hover:translate-x-2 transition-transform">LEARN MORE <i data-lucide="arrow-right" class="ml-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">OUR SPECIALIZED <span class="text-red-600">SERVICES</span></h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <div class="bg-zinc-900 p-8 rounded-xl border border-white/5 hover:border-red-600/50 transition-all group hover:-translate-y-2">
+                <i data-lucide="dumbbell" class="w-12 h-12 text-red-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                <h3 class="text-xl font-bold mb-3">Weight Training</h3>
+                <p class="text-gray-500 text-sm">Professional bodybuilding and strength equipment for all levels.</p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-xl border border-white/5 hover:border-red-600/50 transition-all group hover:-translate-y-2">
+                <i data-lucide="heart-pulse" class="w-12 h-12 text-red-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                <h3 class="text-xl font-bold mb-3">Cardio Blast</h3>
+                <p class="text-gray-500 text-sm">High-intensity interval training to burn fat and boost stamina.</p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-xl border border-white/5 hover:border-red-600/50 transition-all group hover:-translate-y-2">
+                <i data-lucide="users" class="w-12 h-12 text-red-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                <h3 class="text-xl font-bold mb-3">Personal Training</h3>
+                <p class="text-gray-500 text-sm">One-on-one sessions tailored to your specific fitness goals.</p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-xl border border-white/5 hover:border-red-600/50 transition-all group hover:-translate-y-2">
+                <i data-lucide="flower-2" class="w-12 h-12 text-red-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                <h3 class="text-xl font-bold mb-3">Yoga & Flex</h3>
+                <p class="text-gray-500 text-sm">Improve flexibility and mental clarity with expert-led yoga.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trainers" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">EXPERT <span class="text-red-600">TRAINERS</span></h2>
+            <p class="text-gray-400">Work with the best in the industry</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+            <div class="group relative overflow-hidden rounded-lg">
+                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500 h-[400px] object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
+                    <h4 class="text-2xl font-bold">John Kovak</h4>
+                    <p class="text-red-600 font-semibold">Bodybuilding Expert</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-lg">
+                <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500 h-[400px] object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
+                    <h4 class="text-2xl font-bold">Sarah Jenkins</h4>
+                    <p class="text-red-600 font-semibold">HIIT Specialist</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-lg">
+                <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500 h-[400px] object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
+                    <h4 class="text-2xl font-bold">Mike Chen</h4>
+                    <p class="text-red-600 font-semibold">Yoga Master</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">MEMBERSHIP <span class="text-red-600">PLANS</span></h2>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div class="bg-zinc-900 p-10 rounded-2xl border border-white/5 flex flex-col">
+                <h3 class="text-xl font-bold mb-4">BASIC</h3>
+                <div class="text-4xl font-extrabold mb-6">$29<span class="text-lg font-normal text-gray-500">/mo</span></div>
+                <ul class="space-y-4 mb-10 flex-grow">
+                    <li class="flex items-center text-gray-400"><i data-lucide="check" class="text-red-600 mr-2 w-5 h-5"></i> All Gym Equipment</li>
+                    <li class="flex items-center text-gray-400"><i data-lucide="check" class="text-red-600 mr-2 w-5 h-5"></i> Locker Room</li>
+                    <li class="flex items-center text-gray-400 opacity-30"><i data-lucide="x" class="mr-2 w-5 h-5"></i> Personal Trainer</li>
+                </ul>
+                <button class="w-full border border-red-600 py-3 rounded-lg font-bold hover:bg-red-600 transition-colors">CHOOSE PLAN</button>
+            </div>
+            <div class="bg-zinc-900 p-10 rounded-2xl border-2 border-red-600 flex flex-col relative transform scale-105 shadow-[0_0_40px_rgba(220,38,38,0.2)]">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-600 text-white px-4 py-1 text-xs font-bold rounded-full">MOST POPULAR</span>
+                <h3 class="text-xl font-bold mb-4">STANDARD</h3>
+                <div class="text-4xl font-extrabold mb-6">$59<span class="text-lg font-normal text-gray-500">/mo</span></div>
+                <ul class="space-y-4 mb-10 flex-grow">
+                    <li class="flex items-center text-gray-200"><i data-lucide="check" class="text-red-600 mr-2 w-5 h-5"></i> All Gym Equipment</li>
+                    <li class="flex items-center text-gray-200"><i data-lucide="check" class="text-red-600 mr-2 w-5 h-5"></i> Locker + Sauna</li>
+                    <li class="flex items-center text-gray-200"><i data-lucide="check" class="text-red-600 mr-2 w-5 h-5"></i> 4 Training Sessions</li>
+                </ul>
+                <button class="w-full bg-red-600 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors">CHOOSE PLAN</button>
+            </div>
+            <div class="bg-zinc-900 p-10 rounded-2xl border border-white/5 flex flex-col">
+                <h3 class="text-xl font-bold mb-4">PREMIUM</h3>
+                <div class="text-4xl font-extrabold mb-6">$99<span class="text-lg font-normal text-gray-500">/mo</span></div>
+                <ul class="space-y-4 mb-10 flex-grow">
+                    <li class="flex items-center text-gray-400"><i data-lucide="check" class="text-red-600 mr-2 w-5 h-5"></i> Full Access 24/7</li>
+                    <li class="flex items-center text-gray-400"><i data-lucide="check" class="text-red-600 mr-2 w-5 h-5"></i> Unlimited PT</li>
+                    <li class="flex items-center text-gray-400"><i data-lucide="check" class="text-red-600 mr-2 w-5 h-5"></i> Nutrition Plan</li>
+                </ul>
+                <button class="w-full border border-red-600 py-3 rounded-lg font-bold hover:bg-red-600 transition-colors">CHOOSE PLAN</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <h2 class="text-4xl font-extrabold italic">HEAR FROM OUR <span class="text-red-600">CHAMPIONS</span></h2>
+            <div class="space-y-6">
+                <div class="bg-black p-8 rounded-xl border-l-4 border-red-600">
+                    <div class="flex text-orange-500 mb-4"><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i></div>
+                    <p class="text-gray-400 italic mb-4">"The atmosphere here is unmatched. I've lost 20lbs in 3 months and gained a whole new community of friends."</p>
+                    <span class="font-bold">- David Miller</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-4xl font-bold mb-8 italic text-red-600">GET IN TOUCH</h2>
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-zinc-900 flex items-center justify-center rounded-full mr-4 border border-white/10">
+                            <i data-lucide="map-pin" class="text-red-600"></i>
+                        </div>
+                        <p>123 Fitness Ave, Muscle City, MC 4567</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-zinc-900 flex items-center justify-center rounded-full mr-4 border border-white/10">
+                            <i data-lucide="phone" class="text-red-600"></i>
+                        </div>
+                        <p>+1 (555) 888-2345</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-zinc-900 flex items-center justify-center rounded-full mr-4 border border-white/10">
+                            <i data-lucide="mail" class="text-red-600"></i>
+                        </div>
+                        <p>join@ironpulse.com</p>
+                    </div>
+                </div>
+            </div>
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full bg-zinc-900 border border-white/10 rounded-lg px-6 py-4 focus:outline-none focus:border-red-600 transition-colors">
+                <input type="email" placeholder="Your Email" class="w-full bg-zinc-900 border border-white/10 rounded-lg px-6 py-4 focus:outline-none focus:border-red-600 transition-colors">
+                <textarea rows="4" placeholder="Your Message" class="w-full bg-zinc-900 border border-white/10 rounded-lg px-6 py-4 focus:outline-none focus:border-red-600 transition-colors"></textarea>
+                <button class="w-full bg-red-600 hover:bg-red-700 py-4 rounded-lg font-bold text-lg shadow-lg">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-950 border-t border-white/5 py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <span class="text-2xl font-extrabold tracking-tighter text-red-600">IRON<span class="text-white">PULSE</span></span>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-red-600 transition-colors"><i data-lucide="facebook"></i></a>
+                <a href="#" class="hover:text-red-600 transition-colors"><i data-lucide="instagram"></i></a>
+                <a href="#" class="hover:text-red-600 transition-colors"><i data-lucide="twitter"></i></a>
+                <a href="#" class="hover:text-red-600 transition-colors"><i data-lucide="youtube"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2026 Iron Pulse Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
